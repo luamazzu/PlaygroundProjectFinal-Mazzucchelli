@@ -1,0 +1,10 @@
+{% extends 'AppCoder/padre.html' %}
+
+{% block contenidoQueCambia %}
+<h4>Lista de cursos</h4>
+
+{% for curso in cursos %}
+ <h2>{{curso.curso}}</h2>
+ {% endfor %}
+
+ {% endblock %}
